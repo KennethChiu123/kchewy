@@ -1,22 +1,60 @@
 import React, { Component } from 'react';
+import 'react-twitter-widgets'
+import Slider from 'react-slick'
+import {
+  Link
+} from 'react-router-dom';
+
+
+import mainImage0 from './../../images/mainImage.jpg';
+import mainImage1 from './../../images/mainImage2.jpg';
+import mainImage2 from './../../images/mainImage3.jpeg';
 
 class Homepage extends Component {
-  render() {
-    return (
-    	<div className="container-fluid">
+    render() {      
+        var settings = {
+          //dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay:true,
+          autoplaySpeed: 5500,
+          swipeToSlide: true,
+          adaptiveHeight:true,
+          pauseOnHover:true,
+        };
+        return (
+            <div className="content">
+              <div className="container">
+                <Slider {...settings}>
+                    <div>
+                        <a href="https://www.yahoo.com/"> 
+                            <img src={mainImage0} />
+                        </a>
+                    </div>
 
-    		<h1>
-    		Home Page Content
-    		</h1>
+                    <div>
+                        <a href="https://www.youtube.com/"> 
+                            <img src={mainImage1} />
+                        </a>
+                    </div>
 
-    		<p>
-    		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    		</p>
+                    <div>
+                        <a href="https://www.aol.com/"> 
+                            <img src={mainImage2} />
+                        </a>
+                    </div>
 
-		</div>
-
-    );
-  }
-}
+                    <div>
+                        <a href="https://www.amazon.com/"> 
+                            <img src='https://yt3.ggpht.com/-TqFzMDgTa64/AAAAAAAAAAI/AAAAAAAAAAA/keg7BdguTLg/s900-c-k-no-mo-rj-c0xffffff/photo.jpg' />
+                        </a>
+                    </div>
+                </Slider>
+              </div>
+            </div>
+        );
+    }
+}   
 
 export default Homepage;

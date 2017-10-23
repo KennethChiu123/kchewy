@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-class Onepage extends Component {
+class ContactPage extends Component {
   render() {
     return (
     	<div className="container-fluid">
 
     		<h2>
-    		Onepage Content
+    		ContactPage Content
     		</h2>
 
     		<p>
-    		Onepage content afahifho;qhr;qoiadfdhisfhis
+    		ContactPage content afahifho;qhr;qoiadfdhisfhis
             </p>
 
 		</div>
@@ -19,4 +19,4 @@ class Onepage extends Component {
   }
 }
 
-export default Onepage;
+export default ContactPage;

@@ -1,49 +1,265 @@
 @import "_config.scss";
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
 header {
-	position: relative;
-	display:block;
-	width:100%;
-	background: $black;
-	color: $white;
-	height: 90px;
+    z-index: 2;
+    position: fixed;
+    display:block;
+    width:100%;
+    background: $black;
+    color: $white;
+    height: 80px;
 
-	.logo {
-		position: absolute;
-		top: 50%; left: 15px;
-		@include translateY (-50%);
-	}
-
-	nav, 
-	nav ul,
-	nav ul li {
-		margin: 0;
-		padding: 0;
-	}
-
-	nav {
-		position: absolute;
-		top: 50%; right: 15px;
-		@include translateY (-50%);
-	
-
-		ul li {
-			list-style-type: none;
-			display: inline-block;
-			margin-right: 15px;
-
-			&.last {
-				margin:0;
-			}
-
-			a {
-				font-size:19px;
-				line-height: normal;
-				color: $white
-			}
-		}
+    .logo {
+        position: absolute;
+        top: 50%; left: 20px;
+        @include translateY (-50%);
+    }
 
 
-	}
+    .mainlogo1 {
+        width:400px;
+        height:60px;
+    }
+
+    nav, 
+    nav ul,
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        position: absolute;
+        top: 50%; right: 15px;
+        @include translateY (-50%);
+    
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 15px;
+
+            &.last {
+                margin:0;
+            }
+
+            a {
+                font-size:19px;
+                line-height: normal;
+                color: $white
+            }
+        }
+
+
+    }
 
 }
+
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 98%;
+  font-family: helvetica, sans-serif;
+}
+.content {
+  position: relative;
+  padding-top: 100px;
+}
+    
+.content{
+    a img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.twitterSphere {
+    float: right;
+    width: 50%;
+}
+    
+.instaFeed2 {
+    width: 100%;
+}
+
+.mainImage {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 426px) {
+    header {
+        z-index: 2;
+        position: fixed;
+        display:block;
+        width:100%;
+        background: $red;
+        color: #black;
+        height: 45px;
+
+        .logo {
+            position: absolute;
+            top: 50%; left: 12px;
+            @include translateY (-50%);
+        }
+
+        .mainlogo1 {
+            width:140px;
+            height:20px;
+        }
+
+        nav, 
+        nav ul,
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: absolute;
+            top: 50%; right: 15px;
+            @include translateY (-50%);
+        
+
+            ul li {
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 15px;
+
+                &.last {
+                    margin:0;
+                }
+
+                a {
+                    font-size:12px;
+                    line-height: normal;
+                    color: $white
+                }
+            }
+
+
+        }
+
+    }
+    .container {
+      position: relative;
+      margin: 0 auto;
+      width: 98%;
+      font-family: helvetica, sans-serif;
+    }
+    .content {
+      position: relative;
+      padding-top: 50px;
+    }
+
+    .twitterSphere {
+        width: 100%;
+    }
+        
+    .instaFeed2 {
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 320px) {
+    header {
+        z-index: 2;
+        position: fixed;
+        display:block;
+        width:100%;
+        background: $red;
+        color: #black;
+        height: 45px;
+
+        .logo {
+            position: absolute;
+            top: 50%; left: 12px;
+            @include translateY (-50%);
+        }
+
+        .mainlogo1 {
+            width:120px;
+            height:17px;
+        }
+
+        nav, 
+        nav ul,
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: absolute;
+            top: 50%; right: 15px;
+            @include translateY (-50%);
+        
+
+            ul li {
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 15px;
+
+                &.last {
+                    margin:0;
+                }
+
+                a {
+                    font-size:10px;
+                    line-height: normal;
+                    color: $white
+                }
+            }
+
+
+        }
+
+    }
+    .container {
+      position: relative;
+      margin: 0 auto;
+      width: 98%;
+      font-family: helvetica, sans-serif;
+    }
+    .content {
+      position: relative;
+      padding-top: 50px;
+    }
+
+    .twitterSphere {
+        width: 100%;
+    }
+        
+    .instaFeed2 {
+        width: 100%;
+    }
+
+}
+

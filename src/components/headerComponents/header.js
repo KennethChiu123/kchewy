@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import mainLogo from './../../images/kchewyLogo.png';
+
+
 import {
   Link
 } from 'react-router-dom';
@@ -8,29 +11,40 @@ import {
 class Header extends Component {
   render() {
     return (
-    	<header>
+        <header>
+            <div className="logo">
+                <Link to ="/"> 
+                    <img className="mainlogo1" src={mainLogo}/>
+                </Link>
+                {/*
+                <img class="resize" src="https://www.computerhope.com/cdn/computer-hope.jpg"  alt="Computer Hope logo small"></img>
+                */}
 
-    		<div className="logo">
-    			<Link to ="/"></Link>
-    			LOGO
-			</div>
+            </div>
 
-			<nav>
-				<ul>
-					<li className= "first">
-    					<Link to ="/Onepage">One</Link>
-					</li>
 
-					<li>
-						<Link to ="/">Two</Link>
-					</li>
 
-					<li className= "last">
-						<Link to ="/">Three</Link>
-					</li>
-				</ul>
-			</nav>
-		</header>
+            <nav>
+                <ul>
+                    <li className= "first">
+                        <Link to ="/bio">Bio</Link>
+                        {/*<a href="https://twitter.com/share" className="twitter-share-button">Tweet</a>
+                        */}
+                    </li>
+
+                    <li>
+                        <Link to ="/music">Music</Link>
+                    </li>
+                    <li>
+                        <Link to ="/social">Social</Link>
+                    </li>
+                    <li className= "last">
+                        <Link to ="/contact">Contact</Link>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
 
     );
   }
