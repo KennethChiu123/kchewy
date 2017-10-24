@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'react-twitter-widgets'
 import Slider from 'react-slick'
 import {
   Link
