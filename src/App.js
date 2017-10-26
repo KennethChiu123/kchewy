@@ -8,6 +8,7 @@ import {
 
 
 import './Assets/css/default.min.css';
+import './Assets/css/carousel.min.css';
 
 import Header from './components/headerComponents/header';
 import Footer from './components/footerComponents/footer';
@@ -32,9 +33,9 @@ class App extends Component {
           <Route exact path = '/music' component={Musicpage}/>
           <Route exact path = '/social' component={Socialpage}/>
           <Route exact path = '/contact' component={Contactpage}/>
-        {/* 
+         
         <Footer />
-        */}
+        
       </div>
       </Router>
     );

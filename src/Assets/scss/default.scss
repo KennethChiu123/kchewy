@@ -1,12 +1,23 @@
 @import "_config.scss";
 
-body {
+html, body {
   padding: 0;
   margin: 0;
 }
 
+.App {
+   min-height:100%;
+   position:relative;
+}
 
-
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 8px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 header {
     z-index: 2;
@@ -63,30 +74,172 @@ header {
 
 }
 
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+   background:#6cf;
+
+    nav {
+        position: absolute;
+        top: 50%; margin: 0 auto;
+        display:block; right:15px;
+        @include translateY (-50%);
+    
+        .social-button {
+            height:30px
+        }
+
+        ul li {
+            
+            display: inline-block;
+            margin: 0 20px 0 0;
+            white-space:nowrap;
+        }
+    }
+    
+}
+
+
+
+
+
 
 .container {
   position: relative;
   margin: 0 auto;
   width: 98%;
-  font-family: helvetica, sans-serif;
+  height:100%;
+  padding-bottom: 30px;
 }
 .content {
+  height: 100%;
   position: relative;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
     
-.content{
-    a img {
-        max-width: 100%;
-        height: auto;
-    }
+
+.content-bio {
+  position: relative;
+  min-height:100%;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.bioBlock1 {
+  width:100%;
+  min-height:100%;
+}
+.bioBlock2 {
+  width:100%;
+  clear:both;
 }
 
 
 
+.bioL {
+  width:45%;
+  margin-left:10%;
+  float:left;
+  min-height:100%;
+
+  img {
+    max-width:90%;
+  }
+} 
+
+.bioR {
+  width:35%;
+  margin-right:10%;
+  float:right;
+  min-height:100%;
+  p {
+    color:$darkGrey;
+    font-size:16px;
+  }
+
+  .bioTitle {
+    text-align:center;
+    height:100%;
+  }
+}
+
+
+
+
+.content-contact {
+  position: relative;
+  min-height:100%;
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+
+  img {
+    float:left;
+    width: 38%;
+  }
+}
+
+.content-music {
+  position: relative;
+  min-height:100%;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.video1 {
+  width:100%;
+  min-height:100%;
+}
+.video2 {
+  width:100%;
+  clear:both;
+}
+
+
+.descriptionTitle {
+  float:right;
+  text-align:center;
+  height:100%;
+}
+
+.descriptionL {
+  width:35%;
+  margin-left:10%;
+  float:left;
+  min-height:100%;
+} 
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.descriptionR {
+  width:30%;
+  margin-right:10%;
+  float:right;
+  min-height:100%;
+  p {
+    color:$darkGrey;
+    font-size:16px;
+  }
+}
+
 .twitterSphere {
-    float: right;
-    width: 50%;
+    width: 100%;
+    height: 100%;
 }
     
 .instaFeed2 {
@@ -96,6 +249,76 @@ header {
 .mainImage {
     width: 100%;
 }
+
+
+body {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+}
+
+.ContactView-title {
+  font-size: 24px;
+  padding: 0 24px;
+}
+
+.ContactView-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.ContactItem {
+  margin: 0;
+  padding: 8px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.ContactItem-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.ContactItem-email {
+  font-size: 14px;
+  margin-top: 4px;
+  font-style: italic;
+  color: #888;
+}
+.ContactItem-description {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+
+.ContactForm {
+  padding: 8px 24px;
+}
+.ContactForm > input,
+.ContactForm > textarea {
+  display: block;
+  width: 240px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid #888;
+  font-size: 14px;
+}
+.ContactForm > input.ContactForm-error {
+  border-color: #b30e2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -119,52 +342,46 @@ header {
         width:100%;
         background: $red;
         color: #black;
-        height: 45px;
+        height: 150px;
 
         .logo {
-            position: absolute;
-            top: 50%; left: 12px;
-            @include translateY (-50%);
+              position: absolute;
+              top: 30%;
+              left: 50%;
+              transform: translate(-50%, -50%);
         }
-
         .mainlogo1 {
-            width:140px;
-            height:20px;
+            width:320px;
+            height:40px;
         }
-
         nav, 
         nav ul,
         nav ul li {
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             margin: 0;
             padding: 0;
         }
-
         nav {
             position: absolute;
-            top: 50%; right: 15px;
-            @include translateY (-50%);
-        
 
             ul li {
                 list-style-type: none;
-                display: inline-block;
-                margin-right: 15px;
+                display: inline;
+                margin-right: 70px;
 
-                &.last {
-                    margin:0;
-                }
 
                 a {
-                    font-size:12px;
+                    font-size:18px;
                     line-height: normal;
                     color: $white
                 }
             }
 
-
         }
-
     }
+
     .container {
       position: relative;
       margin: 0 auto;
@@ -173,7 +390,7 @@ header {
     }
     .content {
       position: relative;
-      padding-top: 50px;
+      padding-top: 170px;
     }
 
     .twitterSphere {
@@ -196,52 +413,46 @@ header {
         width:100%;
         background: $red;
         color: #black;
-        height: 45px;
+        height: 150px;
 
         .logo {
-            position: absolute;
-            top: 50%; left: 12px;
-            @include translateY (-50%);
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              transform: translate(-50%, -50%);
         }
-
         .mainlogo1 {
-            width:120px;
-            height:17px;
+            width:270px;
+            height:74px;
         }
-
         nav, 
         nav ul,
         nav ul li {
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             margin: 0;
             padding: 0;
         }
-
         nav {
             position: absolute;
-            top: 50%; right: 15px;
-            @include translateY (-50%);
-        
 
             ul li {
                 list-style-type: none;
-                display: inline-block;
-                margin-right: 15px;
+                display: inline;
+                margin-right: 35px;
 
-                &.last {
-                    margin:0;
-                }
 
                 a {
-                    font-size:10px;
+                    font-size:18px;
                     line-height: normal;
                     color: $white
                 }
             }
 
-
         }
-
     }
+
     .container {
       position: relative;
       margin: 0 auto;
@@ -250,7 +461,7 @@ header {
     }
     .content {
       position: relative;
-      padding-top: 50px;
+      padding-top: 170px;
     }
 
     .twitterSphere {

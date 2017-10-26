@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import mainLogo from './../../images/kchewyLogo.png';
-
+import mainLogo from './../../images/logo2.jpg';
+//550 × 150
 
 import {
   Link
@@ -14,7 +14,7 @@ class Header extends Component {
         <header>
             <div className="logo">
                 <Link to ="/"> 
-                    <img className="mainlogo1" src={mainLogo}/>
+                    <img className="mainlogo1" alt="Amanda" src={mainLogo}/>
                 </Link>
                 {/*
                 <img class="resize" src="https://www.computerhope.com/cdn/computer-hope.jpg"  alt="Computer Hope logo small"></img>
@@ -25,7 +25,7 @@ class Header extends Component {
 
 
             <nav>
-                <ul>
+                <ul> 
                     <li className= "first">
                         <Link to ="/bio">Bio</Link>
                         {/*<a href="https://twitter.com/share" className="twitter-share-button">Tweet</a>

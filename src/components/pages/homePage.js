@@ -1,59 +1,42 @@
 import React, { Component } from 'react';
-import Slider from 'react-slick'
-import {
-  Link
-} from 'react-router-dom';
+import { Carousel } from 'react-responsive-carousel';
 
-
-import mainImage0 from './../../images/mainImage.jpg';
-import mainImage1 from './../../images/mainImage2.jpg';
-import mainImage2 from './../../images/mainImage3.jpeg';
+import mainImage0 from './../../images/Slide1.jpg';
+import mainImage1 from './../../images/Slide2.jpg';
+import mainImage2 from './../../images/Slide3.jpg';
 
 class Homepage extends Component {
-    render() {      
-        var settings = {
-          //dots: true,
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay:true,
-          autoplaySpeed: 5500,
-          swipeToSlide: true,
-          adaptiveHeight:true,
-          pauseOnHover:true,
-        };
+    render() {
         return (
             <div className="content">
-              <div className="container">
-                <Slider {...settings}>
-                    <div>
+                <div className="container">
+                    <Carousel 
+                        autoPlay={true} 
+                        infiniteLoop={true}
+                        showArrows={false} 
+                        showStatus={false} 
+                        showIndicators={false} 
+                        >
                         <a href="https://www.yahoo.com/"> 
-                            <img src={mainImage0} />
+                            <div>
+                                <img src={mainImage0} alt="Slide1"/>
+                            </div> 
                         </a>
-                    </div>
-
-                    <div>
                         <a href="https://www.youtube.com/"> 
-                            <img src={mainImage1} />
+                            <div>
+                                <img src={mainImage1} alt="Slide2"/>
+                            </div>
                         </a>
-                    </div>
-
-                    <div>
                         <a href="https://www.aol.com/"> 
-                            <img src={mainImage2} />
+                            <div>
+                                <img src={mainImage2} alt="Slide3"/>
+                            </div>
                         </a>
-                    </div>
-
-                    <div>
-                        <a href="https://www.amazon.com/"> 
-                            <img src='https://yt3.ggpht.com/-TqFzMDgTa64/AAAAAAAAAAI/AAAAAAAAAAA/keg7BdguTLg/s900-c-k-no-mo-rj-c0xffffff/photo.jpg' />
-                        </a>
-                    </div>
-                </Slider>
-              </div>
+                    </Carousel>
+                </div>
             </div>
         );
     }
-}   
+};
 
 export default Homepage;
