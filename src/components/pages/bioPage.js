@@ -19,12 +19,14 @@ class BioPage extends Component {
                   <img src={mainImage0} alt="Bio Pic" />
                 </div>
                 <div className="bioR">
-                <div>
-                  <h3 className="bioTitle">About</h3>
-                </div>
-                    <p> {biography} </p>
-                </div>
-              </div>  
+                    <div>
+                      <h3 className="bioTitle">About</h3>
+                    </div>
+                    <div>
+                        <p> {biography} </p>
+                    </div>
+                </div>  
+                </div>  
             <div className="bioBlock2">
             </div>
             <hr/>

@@ -137,8 +137,6 @@ footer {
   clear:both;
 }
 
-
-
 .bioL {
   width:45%;
   margin-left:10%;
@@ -175,12 +173,43 @@ footer {
   padding-top: 100px;
   padding-bottom: 70px;
 
+}
+.contactBlock1 {
+  width:100%;
+  min-height:100%;
+}
+.contactBlock2 {
+  width:100%;
+  clear:both;
+}
 
+.contactL {
+  width:45%;
+  margin-left:10%;
+  float:left;
+  min-height:100%;
   img {
-    float:left;
-    width: 38%;
+    max-width:90%;
+  }
+} 
+
+.contactR {
+  width:35%;
+  margin-right:10%;
+  float:right;
+  min-height:100%;
+
+  .contactTitle {
+    text-align:center;
+    height:100%;
   }
 }
+.messageTextarea {
+  color:$red;
+  word-wrap: 'break-word';
+}
+
+
 
 .content-music {
   position: relative;
@@ -251,66 +280,6 @@ footer {
 }
 
 
-
-
-
-
-.ContactView-title {
-  font-size: 24px;
-  padding: 0 24px;
-}
-
-.ContactView-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #f0f0f0;
-}
-
-.ContactItem {
-  margin: 0;
-  padding: 8px 24px;
-  border-bottom: 1px solid #f0f0f0;
-}
-.ContactItem-name {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-.ContactItem-email {
-  font-size: 14px;
-  margin-top: 4px;
-  font-style: italic;
-  color: #888;
-}
-.ContactItem-description {
-  font-size: 14px;
-  margin-top: 4px;
-}
-
-
-.ContactForm {
-  padding: 8px 24px;
-}
-.ContactForm > div > input,
-.ContactForm > div > textarea {
-  display: block;
-  width: 240px;
-  padding: 4px 8px;
-  margin-bottom: 8px;
-  border-radius: 3px;
-  border: 1px solid #888;
-  font-size: 14px;
-}
-
-.ContactForm > div > textarea {
-  width:500px;
-  border-color: #b30e2f;
-
-}
-.ContactForm > div > input.ContactForm-error {
-  border-color: #b30e2f;
-}
 
 
 
