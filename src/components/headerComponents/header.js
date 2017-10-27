@@ -19,19 +19,12 @@ class Header extends Component {
                 {/*
                 <img class="resize" src="https://www.computerhope.com/cdn/computer-hope.jpg"  alt="Computer Hope logo small"></img>
                 */}
-
             </div>
-
-
-
             <nav>
                 <ul> 
                     <li className= "first">
                         <Link to ="/bio">Bio</Link>
-                        {/*<a href="https://twitter.com/share" className="twitter-share-button">Tweet</a>
-                        */}
                     </li>
-
                     <li>
                         <Link to ="/music">Music</Link>
                     </li>
@@ -43,9 +36,7 @@ class Header extends Component {
                     </li>
                 </ul>
             </nav>
-
         </header>
-
     );
   }
 }

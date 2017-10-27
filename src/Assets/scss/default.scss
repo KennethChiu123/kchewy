@@ -321,7 +321,8 @@ footer {
             ul li {
                 list-style-type: none;
                 display: inline;
-                margin-right: 70px;
+                text-align:center;
+                margin-right: 180px;
 
 
                 a {
@@ -362,12 +363,17 @@ footer {
       clear:both;
     }
 
+    .bioTitle {
+      text-align:center;
+      height:100%;
+    }
+
     .bioL {
-      width:100%;
+      width:80%;
       min-height:100%;
 
       img {
-        max-width:80%;
+        max-width:100%;
       }
     } 
 
@@ -375,14 +381,10 @@ footer {
       width:80%;
       min-height:100%;
       p {
-        color:$red;
+        color:$darkGrey;
         font-size:16px;
       }
 
-      .bioTitle {
-        text-align:center;
-        height:100%;
-      }
     }
 
 
@@ -412,7 +414,7 @@ footer {
       width:80%;
       min-height:100%;
       img {
-        max-width:80%;
+        max-width:100%;
       }
     } 
 
@@ -440,6 +442,7 @@ footer {
 
 
     .descriptionTitle {
+      width:100%;
       text-align:center;
       height:100%;
     }
@@ -586,7 +589,7 @@ footer {
       width:80%;
       min-height:100%;
       p {
-        color:$red;
+        color:$darkGrey;
         font-size:16px;
       }
 
