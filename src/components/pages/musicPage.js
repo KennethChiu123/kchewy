@@ -30,7 +30,6 @@ class MusicPage extends Component {
   }
 
   VideosList() {
-    //var url ='https://www.googleapis.com/youtube/v3/search\?part\=snippet\&channelId\=UCA95A2hb8QPRTeV9C74uToQ\&maxResults\=10\&order\=date\&type\=video\&key\=AIzaSyDEwr0n0SB2Etm0GEjGsTrYOVvPafAfysQ';
     var url ='https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCA95A2hb8QPRTeV9C74uToQ&maxResults=10&order=date&type=video&key=AIzaSyDEwr0n0SB2Etm0GEjGsTrYOVvPafAfysQ';
     fetch(url)
     .then(function(response) {

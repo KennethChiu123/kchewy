@@ -20,8 +20,6 @@ class Footer extends Component {
                                 <img src={fbImage} alt="Facebook" className="social-button" />
                             </div> 
                         </a>
-                        {/*<a href="https://twitter.com/share" className="twitter-share-button">Tweet</a>
-                        */}
                     </li>
 
                     <li>

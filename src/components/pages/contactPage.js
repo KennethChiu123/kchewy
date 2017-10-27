@@ -9,12 +9,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import contactImg from './../../images/contact1.jpg';
 
 
-
-
-
-
 class ContactForm extends Component {
-
 
   state = {
     name: "",
@@ -31,8 +26,6 @@ class ContactForm extends Component {
   updateField (field, value) {
     this.setState({ [field]: value});
   }
-
-
 
   validate = () => {
     let isError = false;
@@ -67,8 +60,6 @@ class ContactForm extends Component {
     // this.props.onSubmit(this.state);
     const err = this.validate();
     if (!err) {
-      console.log("Our Submitted Data");
-      console.log(this.state);
       //submit data
       //lets email data
       delete this.state.nameError
@@ -83,7 +74,6 @@ class ContactForm extends Component {
           'Content-Type': 'application/json'
         }
       });
-      console.log("success")
       //then
       // clear form
       this.setState({
@@ -173,9 +163,6 @@ class ContactForm extends Component {
         </div>
         <hr/>
         </div>
-
-
-      
       </div>
       </div>
     );
