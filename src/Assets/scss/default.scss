@@ -251,10 +251,9 @@ footer {
 }
 
 
-body {
-  font-family: Tahoma, sans-serif;
-  margin: 0;
-}
+
+
+
 
 .ContactView-title {
   font-size: 24px;
@@ -293,8 +292,8 @@ body {
 .ContactForm {
   padding: 8px 24px;
 }
-.ContactForm > input,
-.ContactForm > textarea {
+.ContactForm > div > input,
+.ContactForm > div > textarea {
   display: block;
   width: 240px;
   padding: 4px 8px;
@@ -303,7 +302,13 @@ body {
   border: 1px solid #888;
   font-size: 14px;
 }
-.ContactForm > input.ContactForm-error {
+
+.ContactForm > div > textarea {
+  width:500px;
+  border-color: #b30e2f;
+
+}
+.ContactForm > div > input.ContactForm-error {
   border-color: #b30e2f;
 }
 
