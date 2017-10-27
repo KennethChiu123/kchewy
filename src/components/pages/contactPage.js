@@ -61,6 +61,7 @@ class ContactForm extends Component {
     return isError;
   };
 
+
   onSubmit = e => {
     e.preventDefault();
     // this.props.onSubmit(this.state);
@@ -70,9 +71,17 @@ class ContactForm extends Component {
       console.log(this.state);
       //submit data
       //lets email data
+      delete this.state.nameError
+      delete this.state.emailError
+      delete this.state.subjectError
+      delete this.state.messageError
+      delete this.state.messageSent
       fetch("https://formspree.io/ken88there@gmail.com", {
         method: 'post',
-        body: {message: "hello!"}
+        body: JSON.stringify(this.state),
+        headers: {
+          'Content-Type': 'application/json'
+        }
       });
       console.log("success")
       //then
