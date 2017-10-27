@@ -688,7 +688,53 @@ footer {
 
 
 
+@media (max-width: 376px) {
+    header {
+        z-index: 2;
+        position: fixed;
+        display:block;
+        width:100%;
+        color: #black;
+        height: 150px;
 
+        .logo {
+              position: absolute;
+              top: 30%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+        }
+        .mainlogo1 {
+            width:320px;
+            height:60px;
+        }
+        nav, 
+        nav ul,
+        nav ul li {
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            position: absolute;
+
+            ul li {
+                list-style-type: none;
+                display: inline;
+                margin-right: 31.7%;
+
+
+                a {
+                    font-size:18px;
+                    line-height: normal;
+                    color: $white
+                }
+            }
+
+        }
+    }
+    }
 
 
 
